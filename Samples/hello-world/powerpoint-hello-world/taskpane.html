@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <p>This add-in will insert 'Hello world!' in the current selection of the slide.</p>
+    <p>输入“Helloworld”字样。</p>
     <button onclick="sayHello()">Say hello</button>
 </body>
 
@@ -29,7 +29,7 @@
         await Office.context.document.setSelectedDataAsync(" ", options);
 
         // Set text in selection to 'Hello world!'
-        await Office.context.document.setSelectedDataAsync("Hello world!", options);
+        await Office.context.document.setSelectedDataAsync("Hello world!abcdef", options);
     }
 
 </script>
